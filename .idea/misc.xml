@@ -6,11 +6,12 @@
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/drawable/ic_add_photo_alternate.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/drawable/ic_delete.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/drawable/ic_home.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/drawable/ic_thumb_up.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/layout/fragment_add.xml" value="0.1" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
-        <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/layout/item_snapshot.xml" value="0.264" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/layout/item_snapshot.xml" value="0.1" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/Snapshots/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
