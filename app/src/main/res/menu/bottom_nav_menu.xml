@@ -5,14 +5,17 @@
     <item
         android:id="@+id/action_home"
         android:title="@string/home_title"
+        android:icon="@drawable/ic_home"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_add"
         android:title="@string/home_add"
+        android:icon="@drawable/ic_add_photo_alternate"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_profile"
         android:title="@string/home_profile"
+        android:icon="@drawable/ic_account_circle"
         app:showAsAction="never"/>
 
 </menu>
