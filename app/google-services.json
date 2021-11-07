@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211356601408",
+    "project_id": "snapshots-52523",
+    "storage_bucket": "snapshots-52523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211356601408:android:2e42985812bf269feda3a5",
+        "android_client_info": {
+          "package_name": "com.cursosant.android.snapshots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211356601408-h6mqqbgj3utfhak5cda6h03n1h467smd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ9QWQHZpRxaXqq1T9_5QSmuJUyr-74HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211356601408-h6mqqbgj3utfhak5cda6h03n1h467smd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
