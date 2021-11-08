@@ -58,6 +58,7 @@
         android:id="@+id/imgPhoto"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:scaleType="centerCrop"
         android:layout_marginTop="@dimen/common_padding_min"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

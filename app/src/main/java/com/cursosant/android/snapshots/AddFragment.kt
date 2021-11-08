@@ -1,7 +1,10 @@
 package com.cursosant.android.snapshots
 
+import android.app.Activity
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -33,10 +36,23 @@ class AddFragment : Fragment() {
     }
 
     private fun openGallery() {
-
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        startActivityForResult(intent, RC_GELLERY)
     }
 
     private fun postSnapshot() {
 
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK){
+            if (requestCode == RC_GELLERY){
+                mPhotoSelectedUri = data?.data
+                mBinding.imgPhoto.setImageURI(mPhotoSelectedUri)
+                mBinding.tilTitle.visibility = View.VISIBLE
+                mBinding.tvMessage.text = getString(R.string.post_message_valid_title)
+            }
+        }
     }
 }
