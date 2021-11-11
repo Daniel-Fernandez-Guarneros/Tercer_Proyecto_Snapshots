@@ -88,6 +88,12 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
+
+        mBinding.bottomNav.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.action_home -> (homeFragment as HomeAux).goToTop()
+            }
+        }
     }
 
     override fun onResume() {
