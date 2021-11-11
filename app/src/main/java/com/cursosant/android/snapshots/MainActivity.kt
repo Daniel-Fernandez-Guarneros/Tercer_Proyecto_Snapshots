@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             val user = it.currentUser
             if (user == null){
                 startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder()
+                    .setIsSmartLockEnabled(false)
                     .setAvailableProviders(
                         Arrays.asList(
                             AuthUI.IdpConfig.EmailBuilder().build(),
