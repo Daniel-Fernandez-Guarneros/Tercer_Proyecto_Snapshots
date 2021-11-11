@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         mFragmentManager.beginTransaction()
             .add(R.id.hostFragment, homeFragment, HomeFragment::class.java.name).commit()
 
-        mBinding.bottomNav.setOnNavigationItemSelectedListener {
+        mBinding.bottomNav.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.action_home -> {
                     mFragmentManager.beginTransaction().hide(mActiveFragment).show(homeFragment).commit()
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        mBinding.bottomNav.setOnNavigationItemReselectedListener {
+        mBinding.bottomNav.setOnItemReselectedListener {
             when(it.itemId){
                 R.id.action_home -> (homeFragment as HomeAux).goToTop()
             }
