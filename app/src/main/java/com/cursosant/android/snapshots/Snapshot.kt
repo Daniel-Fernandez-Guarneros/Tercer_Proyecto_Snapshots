@@ -1,5 +1,6 @@
 package com.cursosant.android.snapshots
 
+import com.google.firebase.database.Exclude
 import com.google.firebase.database.IgnoreExtraProperties
 
 /****
@@ -13,7 +14,7 @@ import com.google.firebase.database.IgnoreExtraProperties
  *
  ***/
 @IgnoreExtraProperties
-data class Snapshot(var id: String = "",
+data class Snapshot(@get:Exclude var id: String = "",
                     var title: String = "",
                     var photoUrl: String ="",
                     var likeList: Map<String, Boolean> = mutableMapOf())
