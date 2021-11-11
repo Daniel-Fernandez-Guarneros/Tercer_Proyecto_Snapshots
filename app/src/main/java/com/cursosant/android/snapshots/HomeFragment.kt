@@ -97,11 +97,21 @@ class HomeFragment : Fragment() {
         mFirebaseAdapter.stopListening()
     }
 
+    private fun deleteSnapshot(snapshot: Snapshot){
+        val databaseReference = FirebaseDatabase.getInstance().reference.child("snapshots")
+        databaseReference.child(snapshot.id).removeValue()
+    }
+
+    private fun setLike(snapshot: Snapshot, checked: Boolean){
+
+    }
+
     inner class SnapshotHolder(view: View) : RecyclerView.ViewHolder(view){
         val binding = ItemSnapshotBinding.bind(view)
 
         fun setListener(snapshot: Snapshot){
-
+            snapshot.id = 1.toString()
+            binding.btnDelete.setOnClickListener { deleteSnapshot(snapshot) }
         }
     }
 }
